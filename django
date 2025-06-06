@@ -1,0 +1,7 @@
+from django.contrib import admin
+from django.urls import path, include  # importa o include
+
+urlpatterns = [
+    path('', include('core.urls')),     #  rota principal redireciona para core
+    path('admin/', admin.site.urls),
+]
